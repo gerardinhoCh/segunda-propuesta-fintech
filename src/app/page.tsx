@@ -26,76 +26,76 @@ import {
   PieChart
 } from "lucide-react"
 
-// Ticker data
+// Ticker data — SEO: social proof with keyword-dense labels
 const tickerItems = [
-  { label: "INVERSORES FORMADOS", value: "120+", icon: Users },
-  { label: "PATRIMONIO GESTIONADO", value: "$2.4M", icon: DollarSign },
-  { label: "MERCADOS REGULADOS", value: "100%", icon: Shield },
-  { label: "RETORNO VERIFICADO", value: "+55%", icon: TrendingUp },
+  { label: "ALUMNOS QUE APRENDIERON A INVERTIR", value: "120+", icon: Users },
+  { label: "CAPITAL BAJO GESTIÓN", value: "$2.4M", icon: DollarSign },
+  { label: "EN MERCADOS REGULADOS (SEC/ESMA)", value: "100%", icon: Shield },
+  { label: "RENTABILIDAD VERIFICADA 18 MESES", value: "+55%", icon: TrendingUp },
 ]
 
-// Mistake cards data
+// Mistake cards — SEO: targets "errores al invertir", "cómo no perder dinero invirtiendo"
 const mistakes = [
   {
     icon: Users,
-    title: "Invertir por Rumores",
-    description: "El 80% de los inversores novatos pierden dinero siguiendo consejos sin fundamento técnico ni análisis de mercado profesional.",
+    title: "Invertir Siguiendo Consejos de Redes Sociales",
+    description: "El 80% de quienes empiezan a invertir en bolsa pierden dinero por seguir 'gurús' de TikTok o WhatsApp sin análisis fundamentado. Un asesor financiero certificado marca la diferencia.",
   },
   {
     icon: AlertTriangle,
-    title: "Confundir Trading con Inversión a Largo Plazo",
-    description: "La especulación a corto plazo no es gestión de patrimonio. Un portafolio diversificado supera al trading impulsivo en el 90% de los casos.",
+    title: "No Saber la Diferencia entre Trading y Inversión",
+    description: "El day trading no es inversión a largo plazo. Los datos demuestran que invertir en ETFs indexados supera al 90% de los traders activos durante períodos de 10+ años.",
   },
   {
     icon: Target,
-    title: "Invertir sin Estrategia de Salida",
-    description: "Entrar al mercado sin plan de salida definido convierte la inversión en apuesta. La disciplina basada en datos es la clave del éxito financiero.",
+    title: "Comprar Acciones sin un Plan Financiero",
+    description: "Invertir dinero sin una estrategia de entrada, salida y gestión de riesgo definida es apostar. La planificación financiera con datos es la base de toda inversión rentable.",
   },
 ]
 
-// Service cards data
+// Service cards — SEO: targets "curso inversión ETFs", "asesor financiero", "mejor forma de invertir"
 const services = [
   {
-    title: "Inversión Pasiva en ETFs",
-    description: "Construye patrimonio a largo plazo con fondos indexados de bajo coste como Vanguard S&P 500. La estrategia más rentable para inversores inteligentes.",
-    features: ["Diversificación global en mercados regulados", "Comisiones mínimas desde 0.03%", "Inversión automatizada mensual"],
+    title: "Curso de Inversión Pasiva en ETFs",
+    description: "Aprende la mejor forma de invertir dinero a largo plazo: fondos indexados como Vanguard S&P 500 (VOO), iShares MSCI World y bonos. La estrategia que usan los inversores más exitosos del mundo.",
+    features: ["Diversificación global en bolsas de EE.UU., Europa y Asia", "Comisiones desde 0.03% — las más bajas del mercado", "Automatiza tu inversión mensual y olvídate del timing"],
     highlight: false,
   },
   {
-    title: "Gestión Activa de Portafolio",
-    description: "Rebalanceo trimestral profesional con ajustes estratégicos según condiciones macroeconómicas. Optimización fiscal incluida.",
-    features: ["Análisis macroeconómico trimestral", "Optimización fiscal de plusvalías", "Reporting mensual detallado"],
+    title: "Gestión Profesional de Portafolio de Inversión",
+    description: "Deja tu portafolio en manos de un asesor financiero certificado. Rebalanceo trimestral, optimización fiscal de plusvalías y análisis macroeconómico para maximizar tu rentabilidad.",
+    features: ["Análisis macro de mercados financieros cada trimestre", "Ahorra impuestos con optimización fiscal de capital gains", "Informe mensual detallado de rendimiento de tu inversión"],
     highlight: true,
   },
   {
-    title: "Mentoría Financiera Personalizada",
-    description: "Aprende a invertir con acompañamiento 1:1. Sesiones personalizadas con un asesor certificado y acceso directo para resolver tus dudas.",
-    features: ["Plan de inversión personalizado", "Soporte continuo vía WhatsApp", "Revisión trimestral de cartera"],
+    title: "Mentoría 1:1 — Aprende a Invertir desde Cero",
+    description: "Programa de mentoría financiera personalizada para quienes quieren aprender a invertir en bolsa paso a paso. Desde abrir tu primera cuenta de broker hasta construir un portafolio diversificado.",
+    features: ["Plan de inversión 100% personalizado a tus objetivos financieros", "Soporte directo vía WhatsApp con tu asesor financiero", "Revisión trimestral de tu cartera de inversión con ajustes"],
     highlight: false,
   },
 ]
 
-// Process steps
+// Process steps — SEO: targets "cómo empezar a invertir", "pasos para invertir en bolsa"
 const processSteps = [
-  { num: "01", title: "Agendar", desc: "Reserva tu sesión estratégica gratuita de 30 minutos" },
-  { num: "02", title: "Analizar", desc: "Evaluamos tu perfil inversor y situación financiera" },
-  { num: "03", title: "Estrategia", desc: "Diseñamos opciones de inversión adaptadas a tus objetivos" },
-  { num: "04", title: "Invertir", desc: "Tú decides cuándo empezar a construir patrimonio" },
+  { num: "01", title: "Agenda Gratis", desc: "Reserva tu consulta gratuita de 30 min — sin compromiso ni tarjeta" },
+  { num: "02", title: "Diagnóstico", desc: "Analizamos tu situación financiera y perfil de riesgo inversor" },
+  { num: "03", title: "Plan a Medida", desc: "Diseñamos tu estrategia de inversión personalizada con ETFs" },
+  { num: "04", title: "Empieza a Invertir", desc: "Activa tu portafolio y comienza a construir patrimonio real" },
 ]
 
-// Qualification lists
+// Qualification — SEO: targets "para quién es invertir en bolsa", "cuánto necesito para invertir"
 const forYou = [
-  "Quieres construir patrimonio a largo plazo (+10 años)",
-  "Valoras decisiones basadas en datos y análisis profesional",
-  "Tienes €10.000+ disponibles para empezar a invertir",
-  "Deseas entender cómo funcionan los mercados financieros",
+  "Quieres aprender cómo invertir en bolsa y generar ingresos pasivos",
+  "Buscas la mejor forma de invertir tu dinero a largo plazo (+10 años)",
+  "Tienes €10.000+ de ahorro y quieres ponerlo a trabajar en el mercado",
+  "Valoras la educación financiera y las decisiones basadas en datos reales",
 ]
 
 const notForYou = [
-  "Buscas criptomonedas especulativas o dinero rápido",
-  "No tienes paciencia para una estrategia de inversión a largo plazo",
-  "Esperas retornos garantizados sin asumir ningún riesgo",
-  "No estás dispuesto a aprender sobre educación financiera",
+  "Buscas hacerte rico rápido con criptomonedas o meme stocks",
+  "No tienes la paciencia para una estrategia de inversión a largo plazo",
+  "Esperas rentabilidad garantizada — ninguna inversión lo es",
+  "No quieres dedicar tiempo a entender cómo funciona el mercado financiero",
 ]
 
 export default function Home() {
@@ -193,17 +193,17 @@ export default function Home() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-muted-foreground">
               <Shield className="w-4 h-4 text-primary" />
-              Inversión en Mercados Regulados · Estrategia Basada en Datos
+              +120 Inversores Formados · Mercados Regulados SEC/ESMA · +55% Rentabilidad
             </div>
             
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Aprende a invertir en ETFs y construye un{" "}
-              <span className="text-gradient">portafolio rentable</span>{" "}
-              en mercados regulados.
+              Aprende cómo invertir en bolsa desde cero y construye un{" "}
+              <span className="text-gradient">portafolio rentable con ETFs</span>{" "}
+              en 2025.
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-xl">
-              Deja de adivinar y empieza a invertir con estrategia. Mentoría financiera personalizada, portafolios diversificados y resultados verificados. Tu sesión estratégica gratuita te espera.
+              Mentoría financiera personalizada para inversores que quieren dejar de adivinar y empezar a ganar. Portafolios diversificados con rentabilidad verificada de +55%. Tu primera sesión estratégica es 100% gratuita.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -212,7 +212,7 @@ export default function Home() {
                 className="bg-primary text-primary-foreground hover:scale-105 transition-all duration-300 glow-primary text-lg px-8 py-6"
                 onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Agendar sesión gratuita de inversión
+                Quiero mi sesión gratuita
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button 
@@ -220,7 +220,7 @@ export default function Home() {
                 variant="ghost"
                 className="text-muted-foreground hover:text-foreground hover:bg-white/5 text-lg px-8 py-6"
               >
-                Ver nuestra metodología de inversión
+                Ver cómo funciona paso a paso
               </Button>
             </div>
           </div>
@@ -276,8 +276,8 @@ export default function Home() {
                 
                 {/* Labels */}
                 <div className="absolute bottom-6 left-6 right-6 flex justify-between text-xs text-muted-foreground">
-                  <span>Inversión impulsiva y volátil</span>
-                  <span className="text-primary">Crecimiento patrimonial estructurado</span>
+                  <span>Invertir sin estrategia = perder dinero</span>
+                  <span className="text-primary">Inversión inteligente = patrimonio real</span>
                 </div>
               </div>
               
@@ -334,13 +334,13 @@ export default function Home() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary mb-4">
               <Check className="w-4 h-4" />
-              Resultados Verificados
+              Rentabilidad Real — No Promesas
             </div>
             <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-              Portafolio de inversión real con <span className="text-gradient">rentabilidad verificada</span>
+              ¿Cuánto se gana invirtiendo en ETFs? Nuestro <span className="text-gradient">portafolio real con +55% de retorno</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Abrimos este portafolio diversificado de ETFs hace 18 meses para demostrar que la inversión pasiva inteligente genera resultados. Sin trucos, sin filtros — datos reales.
+              No mostramos capturas de pantalla editadas. Este es un portafolio real de ETFs diversificados que abrimos hace 18 meses para demostrar que invertir en bolsa con estrategia sí genera rentabilidad. Datos verificables, sin filtros.
             </p>
           </div>
 
@@ -468,8 +468,8 @@ export default function Home() {
             {/* Disclaimer */}
             <div className="mt-8 text-center">
               <p className="text-xs text-muted-foreground">
-                * Resultados de un portafolio real de ETFs diversificados siguiendo nuestra metodología de inversión pasiva en mercados regulados. 
-                Los rendimientos pasados no garantizan resultados futuros. Toda inversión conlleva riesgos.
+                * Portafolio real de ETFs (VOO, URTH, BND) gestionado con nuestra metodología de inversión pasiva en mercados regulados por SEC y ESMA. 
+                Los rendimientos pasados no garantizan resultados futuros. Toda inversión en bolsa conlleva riesgos, incluyendo la posible pérdida de capital.
               </p>
             </div>
           </div>
@@ -533,10 +533,10 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-20">
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              Los 3 errores más costosos al <span className="text-gradient">invertir sin estrategia</span>
+              Los 3 errores que hacen que la gente <span className="text-gradient">pierda dinero en bolsa</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Sin un plan de inversión claro y basado en datos, poner tu dinero en el mercado se convierte en una apuesta. Evita estos errores comunes que cuestan miles de euros a los inversores.
+              El 90% de los inversores principiantes cometen estos errores que les cuestan miles de euros. Aprender cómo invertir correctamente desde el inicio te ahorra años de pérdidas y frustración.
             </p>
           </div>
           
@@ -568,7 +568,7 @@ export default function Home() {
                   </div>
                   <span className="font-mono text-red-400">ANTES</span>
                 </div>
-                <h3 className="font-display text-2xl font-bold mb-4">Inversor Impulsivo</h3>
+                <h3 className="font-display text-2xl font-bold mb-4">Así Pierde Dinero el 90% de la Gente</h3>
                 <svg viewBox="0 0 300 100" className="w-full h-24 mb-4">
                   <path
                     d="M 0,50 Q 30,20 60,60 T 120,30 T 180,70 T 240,40 T 300,60"
@@ -578,9 +578,9 @@ export default function Home() {
                   />
                 </svg>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-400" /> Compra activos por miedo a perderse la subida (FOMO)</li>
-                  <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-400" /> Vende en pánico cuando el mercado cae</li>
-                  <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-400" /> Sin criterio objetivo ni análisis de mercado</li>
+                  <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-400" /> Compra acciones por FOMO después de ver un TikTok viral</li>
+                  <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-400" /> Vende todo en pánico al primer -5% del mercado</li>
+                  <li className="flex items-center gap-2"><X className="w-4 h-4 text-red-400" /> Cero análisis, cero plan, cero diversificación</li>
                 </ul>
               </div>
             </Card>
@@ -595,7 +595,7 @@ export default function Home() {
                   </div>
                   <span className="font-mono text-primary">DESPUÉS</span>
                 </div>
-                <h3 className="font-display text-2xl font-bold mb-4">Inversor Estratégico Basado en Datos</h3>
+                <h3 className="font-display text-2xl font-bold mb-4">Así Invierte Quien Sabe Lo Que Hace</h3>
                 <svg viewBox="0 0 300 100" className="w-full h-24 mb-4">
                   <path
                     d="M 0,90 Q 75,70 150,50 T 300,20"
@@ -605,9 +605,9 @@ export default function Home() {
                   />
                 </svg>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Entradas al mercado planificadas con análisis técnico</li>
-                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Estrategia de salida definida antes de invertir</li>
-                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Decisiones basadas en métricas objetivas y datos</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Portafolio diversificado con ETFs de bajo coste</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Estrategia de entrada y salida definida con datos</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-primary" /> Rebalanceo trimestral y optimización fiscal automática</li>
                 </ul>
               </div>
             </Card>
@@ -619,8 +619,8 @@ export default function Home() {
               {/* Calculator Inputs */}
               <div className="space-y-8">
                 <div>
-                  <h3 className="font-display text-2xl font-bold mb-2">Calculadora de Interés Compuesto para Inversores</h3>
-                  <p className="text-muted-foreground">Descubre cuánto puede crecer tu patrimonio con inversión sistemática en ETFs diversificados. El poder del interés compuesto a largo plazo.</p>
+                  <h3 className="font-display text-2xl font-bold mb-2">¿Cuánto dinero puedo ganar invirtiendo? Calculadora de Interés Compuesto</h3>
+                  <p className="text-muted-foreground">Simula cuánto crecerá tu dinero con aportes mensuales en ETFs indexados. El interés compuesto es la fuerza más poderosa del universo financiero — Einstein ya lo sabía.</p>
                 </div>
                 
                 <div className="space-y-6">
@@ -763,10 +763,10 @@ export default function Home() {
             {/* Content */}
             <div className="space-y-6">
               <blockquote className="font-display text-2xl italic text-foreground/80">
-                "No enseñamos a apostar en la bolsa. Enseñamos a invertir con inteligencia y estrategia."
+                "Cualquiera puede aprender a invertir en bolsa. Lo que enseñamos es a hacerlo bien, con datos y sin emociones."
               </blockquote>
               <p className="text-muted-foreground">
-                Más de 15 años de experiencia en mercados financieros internacionales. Certificaciones CFA, FRM y regulación MiFID II. Nuestro enfoque de inversión se basa exclusivamente en análisis de datos, evidencia empírica y métricas objetivas del mercado.
+                Más de 15 años invirtiendo en Wall Street y mercados financieros internacionales. Certificaciones CFA Level III, FRM y cumplimiento MiFID II / ESMA. Hemos ayudado a más de 120 personas a aprender cómo invertir su dinero de forma inteligente. Nuestro método se basa en análisis cuantitativo, evidencia empírica y las mismas estrategias que usan los fondos institucionales.
               </p>
               
               {/* Credentials */}
@@ -785,7 +785,7 @@ export default function Home() {
           
           {/* Process Steps */}
           <div className="mb-20">
-            <h3 className="font-display text-2xl font-bold text-center mb-12">Cómo Empezar a Invertir: Nuestro Proceso en 4 Pasos</h3>
+            <h3 className="font-display text-2xl font-bold text-center mb-12">¿Cómo empezar a invertir en bolsa? 4 pasos simples</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {processSteps.map((step, i) => (
                 <div key={i} className="relative group">
@@ -806,7 +806,7 @@ export default function Home() {
           
           {/* Service Cards */}
           <div>
-            <h3 className="font-display text-2xl font-bold text-center mb-12">Servicios de Inversión y Mentoría Financiera</h3>
+            <h3 className="font-display text-2xl font-bold text-center mb-12">Elige cómo quieres aprender a invertir</h3>
             <div className="grid md:grid-cols-3 gap-6">
               {services.map((service, i) => (
                 <Card 
@@ -849,7 +849,7 @@ export default function Home() {
                         : 'border-primary/30 text-primary hover:bg-primary/10'
                     }`}
                   >
-                    Saber más <ChevronRight className="w-4 h-4 ml-1" />
+                    Empezar ahora <ChevronRight className="w-4 h-4 ml-1" />
                   </Button>
                 </Card>
               ))}
@@ -864,10 +864,10 @@ export default function Home() {
           {/* Qualification Filter */}
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-              ¿Es la inversión inteligente <span className="text-gradient">para ti</span>?
+              ¿Quieres aprender a invertir en bolsa? Comprueba si <span className="text-gradient">esto es para ti</span>
             </h2>
             <p className="text-muted-foreground text-lg">
-              Nuestra mentoría financiera está diseñada para inversores comprometidos con su futuro. Esto no es para todos.
+              Nuestra mentoría financiera está diseñada para personas serias sobre construir patrimonio a largo plazo. No es un curso más — es un programa con resultados reales.
             </p>
           </div>
           
@@ -912,10 +912,10 @@ export default function Home() {
           {/* Final CTA */}
           <div className="glass rounded-2xl p-8 md:p-12 text-center">
             <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-              Tu patrimonio merece una <span className="text-gradient">estrategia de inversión profesional</span>
+              Empieza a invertir hoy con una <span className="text-gradient">sesión estratégica 100% gratuita</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-              Agenda tu sesión estratégica gratuita de 30 minutos. Evaluaremos tu perfil inversor, analizaremos tu situación financiera y exploraremos las mejores opciones de inversión en ETFs y mercados regulados.
+              En 30 minutos analizamos tu situación financiera, definimos tus objetivos de inversión y diseñamos una estrategia personalizada con los mejores ETFs del mercado. Sin compromiso, sin costo, sin letra pequeña.
             </p>
             
             {/* Calendar Embed Placeholder */}
@@ -923,7 +923,7 @@ export default function Home() {
               <div className="flex flex-col items-center gap-4">
                 <Calendar className="w-16 h-16 text-primary/50" />
                 <p className="text-muted-foreground text-sm">
-                  Reserva ahora tu sesión de asesoría gratuita
+                  Plazas limitadas — reserva tu lugar ahora
                 </p>
                 <Button 
                   size="lg"
@@ -931,11 +931,11 @@ export default function Home() {
                   onClick={() => window.open('https://cal.com', '_blank')}
                 >
                   <Calendar className="w-5 h-5 mr-2" />
-                  Agendar mi sesión de inversión gratuita
+                  Quiero mi sesión gratuita ahora
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
                 <p className="text-xs text-muted-foreground mt-2">
-                  Sin compromiso · 100% gratuito · Sin tarjeta de crédito
+                  ✅ Sin compromiso · ✅ 100% gratuito · ✅ Sin tarjeta de crédito
                 </p>
               </div>
             </div>
@@ -961,14 +961,14 @@ export default function Home() {
             </div>
             
             <p className="text-xs text-muted-foreground">
-              © 2025 de Shop en Wall Street — Inversión Inteligente en ETFs y Mercados Regulados. Todos los derechos reservados.
+              © 2025 de Shop en Wall Street — Aprende cómo invertir en bolsa desde cero con ETFs en mercados regulados. Todos los derechos reservados.
             </p>
           </div>
           
           <div className="mt-8 pt-8 border-t border-border/50 text-center">
             <p className="text-xs text-muted-foreground max-w-3xl mx-auto">
-              <strong>Aviso legal importante:</strong> La información proporcionada en este sitio web sobre inversión en ETFs, mercados financieros y gestión de patrimonio es únicamente con fines de educación financiera y no constituye asesoramiento de inversión personalizado. 
-              Los rendimientos pasados no garantizan resultados futuros. Toda inversión en mercados financieros conlleva riesgos, incluyendo la posible pérdida parcial o total del capital invertido.
+              <strong>Aviso legal:</strong> Este sitio web ofrece educación financiera e información sobre cómo invertir en ETFs, fondos indexados, y mercados financieros regulados. No constituye asesoramiento de inversión personalizado ni recomendación de compra o venta de activos financieros. 
+              Los rendimientos pasados de nuestro portafolio (+55% en 18 meses) no garantizan resultados futuros. Toda inversión en bolsa conlleva riesgos, incluyendo la posible pérdida parcial o total del capital invertido. Consulta con un asesor financiero regulado antes de tomar decisiones de inversión.
             </p>
           </div>
         </div>

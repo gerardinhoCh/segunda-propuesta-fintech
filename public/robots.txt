@@ -15,4 +15,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://gerardinhoch.github.io/segunda-propuesta-fintech/sitemap.xml
+Sitemap: https://deshopenwallstreet.netlify.app/sitemap.xml
